@@ -1,0 +1,217 @@
+
+@media (max-width: 1250px) {
+    body {
+        font-size: 15px;
+    }
+
+    .banner {
+        height: 50vh;
+    }
+    .fazer-cafe {
+        height: 70vh;
+    }
+
+    .destaques {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menu-opcoes, .tipos-cafe {
+        width: 90%;
+    }
+
+    .menu-opcoes.cafe {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tela-form {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    .form {
+        width: 70vw;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cabecalho {
+        display: block;
+        text-align: center;
+    }
+    .cabecalho h1 {
+        margin-bottom: 10px;
+    }
+
+    .menu-opcoes.cafe {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menu-opcoes.comida {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .opcao p {
+        width: 50%;
+    }
+
+    .opcao img {
+        width: 50%;
+    }
+
+    .opcao .btn-adicionar {
+        width: 50%;
+    }
+
+    .btn-senha {
+        width: 40%;
+    }
+    .botao-area {
+        width: 50%;
+    }
+
+    .hamburguer {
+        display: block;
+        z-index: 1;
+        position: fixed;
+        top: 26px;
+        right: 16px;
+    }
+
+    .navegacao ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #e59300;
+        clip-path: circle(100px at 90% -25%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .navegacao ul a {
+        font-size: 1.5rem;
+        opacity: 0;
+    }
+
+    .navegacao ul:nth-child(1) a {
+        transition: .5s .2s;
+    }
+    .navegacao ul:nth-child(2) a {
+        transition: .5s .4s;
+    }
+    .navegacao ul:nth-child(3) a {
+        transition: .5s .6s;
+    }
+    .navegacao ul:nth-child(4) a {
+        transition: .5s .8s;
+    }
+
+    .navegacao.active ul {
+        clip-path: circle(2000px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .navegacao.active ul a {
+        opacity: 1;
+    }
+
+    .navegacao.active .hamburguer {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .navegacao.active .hamburguer::before {
+        transform: rotate(135deg);
+    }
+    .navegacao.active .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
+    .banner {
+        height: auto;
+        position: unset;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner img {
+        width: 100vw;
+        height: 25vh;
+    }
+
+    .texto {
+        position: unset;
+        width: 80vw;
+        padding: 10px 0;
+    }
+    .texto h1, .texto p {
+        line-height: 3rem;
+    }
+
+    .txt-destaque {
+        transform: unset;
+    }
+
+    .texto h1 {
+        text-align: center;
+    }
+
+    .destaque {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .destaque a {
+        width: 55%;
+    }
+
+    .menu-opcoes, .tipos-cafe {
+        width: 100%;
+    }
+
+    .opcao {
+        padding: 50px 0;
+    }
+
+    .opcao p, .opcao img, .opcao .btn-adicionar  {
+        width: 55%;
+    }
+
+    .pezinho {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .pezinho div {
+        border-bottom: 1px solid black;
+        padding: .5rem 0;
+    }
+
+    .pezinho div + div {
+        border-left: 0;
+    }
+
+    .form {
+        width: 90vw;
+    }
+
+    .navegacao ul a {
+        font-size: 1rem;
+    }
+
+    
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/icones/icone-cafe.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsivo.css">
+    <script src="./valida-formulario.js" defer></script>
+    
+    <title>Café Bacana</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <section class="cabecalho">
+                <a href="./index.html" id="logo"> 
+                    <h1> <img src="./imgs/icones/icone-cafe.png" alt="Ir para página principal"> Cafe Bacana  <img src="./imgs/icones/icone-cafe.png" alt="Ir para página principal"></h1>  
+                </a>
+                
+                <!-- <a href="./login.html">Entrar / Cadastrar</a> -->
+            </section>
+        </header>
+
+        <div class="content tela-form">
+            <div class="form entrar">
+                <div class="form-header">
+                    <h1>Entrar</h1>
+                </div>
+
+                <form action="#" onsubmit="enviaLogin()">
+                    <div class="campo-form">
+                        <label for="usuario">Usuário: </label> <br>
+                        <input type="text" name="usuario" id="usuario-login" placeholder="Usuário123" required>
+                    </div>
+                    <div class="campo-form">
+                        <label for="senha">Senha: </label> <br>
+                        <input type="password" name="senha" id="senha-login" placeholder="Senha123" required>
+                    </div>
+                    <div class="campo-form btn-senha">
+                        <div class="mostra-senha" id="mostra-senha-login" tabindex="0""> Motrar Senha </div>
+                    </div>
+
+                    <div class="botao-area">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form cadastrar">
+                <div class="form-header">
+                    <h1>Cadastrar-se</h1>
+                </div>
+
+                <form action="#" onsubmit="enviaCadastro()">
+                    <div class="campo-form">
+                        <label for="usuario">Usuário: </label> <br>
+                        <input type="text" name="usuario" id="usuario-cadastro" placeholder="Usuário123" required>
+                    </div>
+                    <div class="campo-form">
+                        <label for="email">E-mail: </label> <br>
+                        <input type="text" name="email" id="email-cadastro" placeholder="exemplo@gmail.com" required>
+                    </div>
+                    <div class="campo-form">
+                        <label for="senha">Senha: </label> <br>
+                        <input type="password" name="senha" id="senha-cadastro" placeholder="Senha123" required>
+                    </div>
+                    <div class="campo-form btn-senha">
+                        <div class="mostra-senha" id="mostra-senha-cadastro" tabindex="0"">Motrar Senha</div class="mostra-senha" id="mostra-senha-entrar">
+                    </div>
+
+                    <div class="botao-area">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="pezinho">
+                <div class="endereco">
+                    <h3>Endereço</h3>
+                    <p>Curitiba Paraná</p>
+                    <p>Rua legal N° 32</p>
+                </div>
+
+                <div class="horario">
+                    <h3>Horario de funcionamento</h3>
+                    <p>Segunda a sexta: 08:00 até 22:00</p>
+                    <p>Sabado e domingo: 10:00 até 16:00</p>
+                </div>
+                
+                <div class="contato">
+                    <h3>Contatos</h3>
+                    <a href="#">Instagram</a>
+                    <p>cafebacana32@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

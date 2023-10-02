@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Header */
+.cabecalho {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 1rem 0rem;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.cabecalho h1:hover {
+    cursor: pointer;
+}
+
+.cabecalho a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.cabecalho a:hover, a:focus {
+    /* border-bottom: 1px solid black; */
+    cursor: pointer;
+    /* transform: scale(1.2); */
+} 
+
+.navegacao {
+    width: 30%;
+}
+
+.navegacao ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.navegacao a {
+    width: 100%;
+    padding: .625rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Fim Header */
+
+/* Conteudo */
+.content {
+    background-color: black;
+    margin-top: 5rem;
+}
+
+.content + .content {
+    margin-top: 3rem;
+}
+/* Home */
+
+.banner {
+    position: relative;
+    color: white;
+    display: flex;
+    height: 70vh;
+}
+.texto {
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.texto h1 {
+    padding-bottom: 1rem;
+    font-weight: bolder;
+}
+.texto p {
+    line-height: 2.2rem;
+}
+
+.banner img {
+    width: 100%;
+}
+.fazer-cafe img {
+    width: 50%;
+}
+
+.arte-cafe {
+    left: 55%;
+    top: 20%;
+}
+
+
+/* Fim Home */
+/* Destaques */
+
+.txt-destaque {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.destaques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    color: white;
+}
+
+.destaque {
+    /* background-color: aqua; */
+    margin: 1.2rem 0;
+    width: 90%;
+    height: 300px;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 10px #e59300;
+}
+.destaque a {
+    color: white;
+    text-decoration: none;
+    width: 30%;
+}
+
+.destaque div {
+    width: 50%;
+}
+.destaque img {
+    width: 100%;
+    height: 25vh;
+    border-radius: 30px;
+}
+
+.descricao-destaque {
+    font-size: 1.1rem;
+}
+
+.descricao-destaque h3 {
+    margin: 1.2rem 0;
+    font-weight: bolder;
+}
+
+.descricao-destaque p {
+    line-height: 1.5rem;
+}
+
+/* fim Destaques */
+
+/* Cafes */
+
+.txt-cafes {
+    left: 60%;
+    top: 40%;
+}
+
+.content-transparent {
+    background-color: transparent;
+}
+
+.tipos-cafe {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #e59300;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.card-tipo {
+    /* background-color: blue; */
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tipos-cafe h3:hover{
+    cursor: pointer;
+}
+
+.tipo-marcado {
+    border-bottom: 1px solid black;
+}
+
+.menu-opcoes {
+    width: 80%;
+    margin: 30px auto;
+    display: grid;
+    gap: 30px;
+}
+.menu-opcoes.cafe {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.menu-opcoes.comida {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.opcao {
+    background-color: #e59300;
+    padding: 1.2rem 0 3rem 0;
+    text-align: center;
+}
+.opcao:hover {
+    cursor: pointer;
+}
+.opcao p {
+    font-weight: bold;
+    border-bottom: 1px solid;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: .625rem;
+    text-transform: uppercase;
+}
+.opcao img {
+    width: 70%;
+    height: 30vh;
+    border-radius: 30px;
+    margin-bottom: 1.2rem;
+}
+.opcao .btn-adicionar {
+    width: 50%;
+    padding: .6rem 0;
+    margin-top: 20px;
+    font-size: .8rem;
+    font-weight: bold;
+    border: 1px solid black;
+    text-transform: uppercase;
+}
+
+/* Fim Cafes */
+
+/* Comida */
+
+.txt-comida {
+    left: 60%;
+    top: 40%;
+}
+
+/* Fim Comida */
+
+/* fim Conteudo */
+
+/* Footer */
+
+.content + footer {
+    margin-top: 3rem;
+}
+
+.pezinho div + div {
+    border-left: 1px solid black;
+}
+
+.pezinho {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 3px solid;
+    /* background-color: rebeccapurple; */
+}
+
+.pezinho div {
+    text-align: center;
+    line-height: 2rem;
+}
+
+/* loign */
+
+.tela-form {
+    background-color: #e59300;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+}
+
+.entrar {
+    width: 35%;
+}
+
+.cadastrar {
+    width: 60%;
+}
+
+.form-header {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.form form {
+    padding: 1rem 10px;
+}
+
+.campo-form {
+    width: 100%;
+    font-size: 1.2rem;
+    /* background-color: aliceblue; */
+}
+.campo-form + .campo-form {
+    margin-top: 1rem;
+}
+.campo-form input {
+    width: 100%;
+    padding: .3rem 0;
+    text-indent: 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: .625rem 0;
+    background: transparent;
+}
+
+.btn-senha{
+    width: 20%;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.btn-senha .mostra-senha{
+    width: 100%;
+    padding: .3rem;
+    border: 2px solid black;
+}
+
+.botao-area {
+    width: 30%;
+    margin: 2rem auto;
+}
+
+.botao-area button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid black;
+}
+.mostra-senha:hover, button:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.botao-area:focus, button:focus, .mostra-senha:focus{
+    /* background-color: green; */
+    transform: scale(1.1);
+}
+
+/* Fim Form */
+
+/* Menu Responsvivo */
+
+.hamburguer {
+    display: none;
+    border-top: 3px solid black;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin-top: 5px;
+    position: relative;
+    transition: .3s;
+}
+
+/* Fim Menu Responsivo */

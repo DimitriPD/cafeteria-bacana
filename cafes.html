@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/icones/icone-cafe.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsivo.css">
+    <script src="./menuCafes.js" defer></script>
+    <script src="./marcaPagina.js" defer></script>
+    <script src="./menuResponsivo.js" defer></script>
+
+    <title>Café Bacana</title>
+</head>
+<body onload="marcaPagina('cafes'), adicionaConteudo('quente')">
+    <div class="container">
+        <header>
+            <section class="cabecalho ">
+                <a href="./index.html" id="logo"> 
+                    <h1> <img src="./imgs/icones/icone-cafe.png" alt="Ir para página principal"> Cafe Bacana  <img src="./imgs/icones/icone-cafe.png" alt="Ir para página principal"></h1> 
+                </a>
+
+                <nav class="navegacao">
+                    <ul>
+                        <a href="./index.html" id="home"> <li> <span lang="en-us"> Home </span> </li> </a>
+                        <a href="./destaques.html" id="destaques"> <li> <p> Destaques </p> </li> </a>
+                        <a href="./cafes.html" id="cafes"> <li> <p> Cafes </p> </li> </a>
+                        <a href="./comida.html" id="comidas"> <li> <p> Para Comer </p> </li> </a>
+                    </ul>
+
+                    <div class="hamburguer" tabindex="0"></div>
+                </nav>
+                
+                <a href="./login.html">Entrar / Cadastrar</a>
+            </section>
+        </header>
+
+        <div class="content">
+            <div class="banner">
+                <img src="./imgs/banners/banner-cafe.jpg" alt="Grãos de cafe espalhados juntamente com ferramentas para fazer café espresso. Imagem usada como banner">
+
+                <div class="texto txt-cafes">
+                    <h1> Confira Nossos Cafés </h1>   
+                </div>
+            </div>
+        </div>
+
+        <div class="content content-transparent">
+            <div class="tipos-cafe">
+                <div class="card-tipo card-tipo-quente tipo-marcado" tabindex="0" style="transform: scale(1.2);"> <h3>Cafés Quentes</h3>  </div>
+                <div class="card-tipo card-tipo-gelado" tabindex="0"> <h3>Cafés Gelados</h3> </div>
+                <div class="card-tipo card-tipo-bebida" tabindex="0"> <h3>Bebidas Refrescantes</h3> </div>
+            </div>
+        </div>
+
+        <div class="menu-opcoes cafe">   
+
+        </div>
+
+        <footer>
+            <div class="pezinho">
+                <div class="endereco">
+                    <h3>Endereço</h3>
+                    <p>Curitiba Paraná</p>
+                    <p>Rua legal N° 32</p>
+                </div>
+
+                <div class="horario">
+                    <h3>Horario de funcionamento</h3>
+                    <p>Segunda a sexta: 08:00 até 22:00</p>
+                    <p>Sabado e domingo: 10:00 até 16:00</p>
+                </div>
+                
+                <div class="contato">
+                    <h3>Contatos</h3>
+                    <a href="#">Instagram</a>
+                    <p>cafebacana32@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+</html>
